@@ -1,0 +1,142 @@
+.App {
+  background: #dfe2e0;
+}
+
+.sign-on-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 300px;
+  height: 30px;
+  border-radius: 20px;
+
+  @media screen and (max-width: 800px) {
+    width: 200px;
+    font-size: 12px;
+  }
+}
+
+body {
+  @media screen and (max-width: 800px) {
+    padding: none;
+    font-size: 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+}
+.hover {
+  :hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+.center {
+  justify-content: center;
+  display: flex;
+}
+
+.link {
+  margin-top: 0.5%;
+  margin-right: 70%;
+  color: white;
+  height: 20px;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  background: #339e47;
+  border: none;
+  border-radius: 20px;
+  padding: 6px;
+  box-shadow: 2px 2px 2px 2px hsl(218, 60%, 92%);
+}
+.link:hover {
+  transform: scale(1.1);
+  color: whitesmoke;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px 2px 2px 2px goldenrod;
+}
+
+.email {
+  position: absolute;
+  margin-top: 12%;
+
+  align-items: center;
+  z-index: 990;
+  background: white;
+  max-width: 80%;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px hsl(218, 60%, 92%);
+
+  @media screen and (max-width: 800px) {
+    position: absolute;
+    margin-top: 19%;
+    z-index: 990;
+    width: 300px;
+    font-size: 12px;
+  }
+}
+
+button {
+  color: white;
+  height: 25px;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  background: #339e47;
+  border: none;
+  border-radius: 20px;
+  padding: 6px;
+  box-shadow: 2px 2px 2px 2px hsl(218, 60%, 92%);
+  @media screen and (max-width: 800px) {
+    font-size: 12px;
+  }
+}
+button:hover {
+  transform: scale(1.1);
+  color: whitesmoke;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px 2px 2px 2px goldenrod;
+}
+
+input {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.179);
+  box-shadow: 2px 2px 2px 2px hsl(218, 60%, 92%);
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.loader {
+  border: 2px solid #f3f3f3; /* Light grey */
+  border-top: 2px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#hide {
+  display: none;
+}
